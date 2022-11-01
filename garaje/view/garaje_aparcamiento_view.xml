@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+	<!--Main Garaje Aparcamiento FORM view-->
+	<record id="garaje_aparcamiento_form_view" model="ir.ui.view">
+		<field name="name">garaje_aparcamiento_form_view</field>
+		<field name="model">garaje.aparcamiento</field>
+		<field name="arch" type="xml">
+			<form>
+				<header></header>
+				<sheet>
+					<group>
+						<field name="name" />
+						<field name="plazas" />
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
 
-    <!-- Garaje ACTIONS window -->
+	<!-- Garaje ACTIONS window -->
 	<record id="action_garaje_aparcamiento" model="ir.actions.act_window">
 		<field name="name">Aparcamiento</field>
 		<field name="res_model">garaje.aparcamiento</field>
@@ -10,5 +26,5 @@
 
 	<!-- Garaje Aparcamiento Menu -->
 	<menuitem id="garaje_aparcamiento_menu" name="Aparcamiento" parent="main_garaje_menu" action="action_garaje_aparcamiento" sequence="220" />
-	
+
 </odoo>
