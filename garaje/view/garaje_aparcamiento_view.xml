@@ -17,6 +17,18 @@
 		</field>
 	</record>
 
+	<!--Main Garaje Aparcamiento TREE view-->
+	<record id="garaje_aparcamiento_tree_view" model="ir.ui.view">
+		<field name="name">garaje_aparcamiento_tree_view</field>
+		<field name="model">garaje.aparcamiento</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="name" />
+				<field name="plazas" />
+			</tree>
+		</field>
+	</record>
+
 	<!-- Garaje ACTIONS window -->
 	<record id="action_garaje_aparcamiento" model="ir.actions.act_window">
 		<field name="name">Aparcamiento</field>
