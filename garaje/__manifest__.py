@@ -36,12 +36,12 @@
         'security/garaje_security_view.xml',
     ],
 
-    # 'installable': True,
+    'installable': True,
     'auto_install': False,
     'application': True,
 
     # only loaded in demonstration mode
     'demo': [
-        'demo/demo.xml',
+        #'demo/demo.xml',
     ],
 }
