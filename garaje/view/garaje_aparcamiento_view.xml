@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Garaje ACTIONS window -->
+	<record id="action_garaje_aparcamiento" model="ir.actions.act_window">
+		<field name="name">Aparcamiento</field>
+		<field name="res_model">garaje.aparcamiento</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+	<!-- Garaje Aparcamiento Menu -->
+	<menuitem id="garaje_aparcamiento_menu" name="Aparcamiento" parent="main_garaje_menu" action="action_garaje_aparcamiento" sequence="220" />
+	
+</odoo>
