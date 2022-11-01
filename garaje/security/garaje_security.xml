@@ -29,7 +29,7 @@
 	<data noupdate="1">
 		<record id="ndm_user_rule" model="ir.rule">
 			<field name="name">Garaje</field>
-			<field name="model_id" ref="module_garaje_aparcamiento"/>
+			<field name="model_id" ref="module_garaje"/>
 			<!--<field name="domain_force">[('active','=',True)]</field>-->
 			<field name="groups" eval="[(4,ref('garaje_group_manager'))]"/>
 		</record>
