@@ -57,7 +57,7 @@
                 <filter name="averiado" string="Averiado" domain = "[('averiado','=', True)]" />
                 <!--filter group model-->
 				<group>
-				<filter name="group_by_averiado" string="Averiado" context="[('group_by':'averiado')]"/>
+				<filter name="group_by_averiado" string="Averiado" context="{'group_by': 'averiado'}"/>
 				</group>
 			</search>
 		</field>
