@@ -15,7 +15,7 @@ class GarajeCoche(models.Model):
     #model fields
     name = fields.Char(
         string = "Matricula",
-        require = True,
+        required = True,
         size = 7,
     )
     descripcion = fields.Text(
@@ -23,12 +23,11 @@ class GarajeCoche(models.Model):
     )
     modelo = fields.Char(
         string = "Modelo",
-        require = True,
+        required = True,
     )
     construido = fields.Date(
         string="Fecha del modelo",
     )
-
     consumo = fields.Float(
         'Consumo', #string -> no permite la etiqueta string al ser float.
         (4,1), #limit
