@@ -41,6 +41,22 @@
 			</tree>
 		</field> 
 	</record>
+		
+	<!--Main Garaje MANTENIMIENTO SEARCH view-->
+	<record id="garaje_mantenimiento_tree_view" model="ir.ui.view">
+		<field name="name">garaje_mantenimiento_tree_view</field>
+		<field name="model">garaje.mantenimiento</field>
+		<field name="arch" type="xml">
+        <search>
+          <field name="fecha"/>
+          <field name="tipo" widget="selection"/> 
+          <group>
+          	<filter name="group_by_tipo" string="Tipo" context="{'group_by':'tipo'}"/>
+          </group>
+        </search>
+		</field> 
+	</record>
+	
 	
 	<!-- Garaje ACTIONS window -->
 	<record id="action_garaje_mantenimiento" model="ir.actions.act_window">
