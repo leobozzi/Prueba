@@ -35,7 +35,7 @@ class GarajeCoche(models.Model):
         #default= 0.0, 
         #help ='Consumo promedio de cada 100 km',
     #)
-    averiado = fields.Bolean(
+    averiado = fields.Boolean(
         string = "Averiado",
         default = False
     )
