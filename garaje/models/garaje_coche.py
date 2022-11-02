@@ -28,13 +28,13 @@ class GarajeCoche(models.Model):
     construido = fields.Date(
         string="Fecha del modelo",
     )
-    consumo = fields.Float('Consumo', (4,1), default= 0.0, help ='Consumo promedio de cada 100 kms')
-    #consumo = fields.Float(
-        #(4,1), #limit
-        #string='Consumo',
-        #default= 0.0, 
-        #help ='Consumo promedio de cada 100 km',
-    #)
+
+    consumo = fields.Float(
+        'Consumo', #string -> no permite la etiqueta string al ser float.
+        (4,1), #limit
+        default= 0.0, 
+        help ='Consumo promedio de cada 100 kms'
+    )
     averiado = fields.Boolean(
         string = "Averiado",
         default = False
