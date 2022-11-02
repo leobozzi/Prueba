@@ -34,9 +34,10 @@
         'view/garaje_view.xml',
         'view/garaje_aparcamiento_view.xml',
         'view/garaje_coche_view.xml',
+        'view/garaje_mantenimiento_view.xml',
         'security/garaje_security_view.xml',
     ],
-    
+
     'installable': True,
     'auto_install': False,
     'application': True,
