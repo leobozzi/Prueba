@@ -10,7 +10,7 @@ class GarajeMantenimiento(models.Model):
     _name = 'garaje.mantenimiento'
     _description = "garaje.mantenimiento"
     _inherit = ['mail.thread', 'mail.activity.mixin']
-    _order = 'Fecha'
+    _order = 'fecha'
     #model field
     fecha = fields.Date(
         string = "Fecha",
