@@ -11,6 +11,7 @@ class GarajeMantenimiento(models.Model):
     _description = "garaje.mantenimiento"
     _inherit = ['mail.thread', 'mail.activity.mixin']
     _order = 'fecha'
+
     #model field
     fecha = fields.Date(
         string = "Fecha",
@@ -24,8 +25,9 @@ class GarajeMantenimiento(models.Model):
             ('l', 'Lavado'), 
             ('r', 'Revision'), 
             ('p', 'Pintura'), 
-            ('m', 'Mecanica')], 
-            default = 'l'
+            ('m', 'Mecanica')
+        ],
+        default = 'l'
     )
 
     coste = fields.Float(
@@ -33,9 +35,12 @@ class GarajeMantenimiento(models.Model):
         (5,4),
         required = True
     )
-    #relational fields
 
-    cocheIds = fields.Many2many(comodel_name='garaje.coche', string='Coches')
+    #relational fields
+    cocheIds = fields.Many2many(
+        comodel_name='garaje.coche', 
+        string='Coches'
+    )
 
     
 

@@ -4,7 +4,8 @@
 
 from odoo import api, fields, models
 from odoo.tools.translate import _
-
+from dateutil.relativedelta import * 
+from datetime import date 
 
 class GarajeCoche(models.Model):
     _name = 'garaje.coche'
@@ -38,6 +39,30 @@ class GarajeCoche(models.Model):
         string = "Averiado",
         default = False
     )
+    
     #relational fields
-    aparcamientoId = fields.Many2one(comodel_name='garaje.aparcamiento', string='Aparcamiento')
-    mantenimientoIds = fields.Many2many(comodel_name='garaje.mantenimiento', string='Mantenimiento')
+    aparcamientoId = fields.Many2one(
+        comodel_name='garaje.aparcamiento', 
+        string='Aparcamiento'
+    )
+    mantenimientoIds = fields.Many2many(
+        comodel_name='garaje.mantenimiento', 
+        string='Mantenimiento'
+    )
+
+    # fields @api and compute
+
+    anual = fields.Integer(
+        string='Años', 
+        compute='_get_anual'
+    )
+
+    @api.depend('construido')
+    def _get_anual(self):
+        for coche in self:
+            fechaActual = date.day()
+            coche.anual = relativedelta(
+                fechaActual,
+                coche.construido
+            ).years
+

@@ -16,6 +16,9 @@
 					</group>
 					<group>
 						<field name="averiado"/>
+						<field name="anual"/>
+					</group>
+					<group>
 						<field name="aparcamientoId"/>
 					</group>
 					<group>
