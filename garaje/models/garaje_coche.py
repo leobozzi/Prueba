@@ -40,4 +40,4 @@ class GarajeCoche(models.Model):
     )
     #relational fields
     aparcamientoId = fields.Many2one(comodel_name='garaje.aparcamiento', string='Aparcamiento')
-    mantenimientoId = fields.Many2many(comodel_name='garaje.mantenimiento', string='Mantenimiento')
+    mantenimientoIds = fields.Many2many(comodel_name='garaje.mantenimiento', string='Mantenimiento')
