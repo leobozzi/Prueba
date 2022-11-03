@@ -42,12 +42,12 @@ class GarajeMantenimiento(models.Model):
     )
 
     #ORN API
-    
+
     def name_get(self):
         resultados = []
         for mantenimiento in self:
             descripcion = f'len{mantenimiento.cocheIds} coches - gastos: {mantenimiento.coste} $'
-            resultados.append(mantenimiento.cocheIds, descripcion)
+            resultados.append((mantenimiento.cocheIds, descripcion))
         return resultados
 
         # Documentacion: https://www.odoo.com/documentation/15.0/es/developer/reference/backend/orm.html#record-set-information
