@@ -38,4 +38,4 @@ class GarajeCoche(models.Model):
         string = "Averiado",
         default = False
     )
-    aparcamientoId = fields.Many2one(comodel_name='garaje.Aparcamiento', string='Aparcamiento')
+    aparcamientoId = fields.Many2one(comodel_name='garaje.aparcamiento', string='Aparcamiento')

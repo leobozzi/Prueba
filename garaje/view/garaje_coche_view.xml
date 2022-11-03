@@ -16,7 +16,7 @@
 					</group>
 					<group>
 						<field name="averiado"/>
-						<field name="mantenimientoId"/>
+						<field name="aparcamientoId"/>
 					</group>
 				</sheet>
 				<!-- mail mixin fields -->
