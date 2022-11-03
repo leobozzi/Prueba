@@ -17,7 +17,7 @@
                         <field name="coste"/>
                     </group>
 					<group>
-						<field name="cochesIds"/>
+						<field name="cocheIds"/>
 					</group>
 				</sheet>
 				<!-- mail mixin fields -->
