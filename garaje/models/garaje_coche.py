@@ -57,7 +57,7 @@ class GarajeCoche(models.Model):
         compute='_get_anual'
     )
 
-    @api.depend('construido')
+    @api.depends('construido')
     def _get_anual(self):
         for coche in self:
             fechaActual = date.day()
