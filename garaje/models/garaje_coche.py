@@ -60,9 +60,11 @@ class GarajeCoche(models.Model):
     @api.depends('construido')
     def _get_anual(self):
         for coche in self:
-            fechaActual = date.day()
+            fechaActual = date.today()
             coche.anual = relativedelta(
                 fechaActual,
                 coche.construido
             ).years
+
+
 
