@@ -18,6 +18,9 @@
 						<field name="averiado"/>
 						<field name="aparcamientoId"/>
 					</group>
+					<group>
+						<field name="mantenimientoIds" />
+					</group>
 				</sheet>
 				<!-- mail mixin fields -->
 				<div class="oe_chatter">

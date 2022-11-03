@@ -18,4 +18,5 @@ class GarajeAparcamiento(models.Model):
         string="Plazas",
         required=True,
     )
+    #relational fields
     cocheIds = fields.One2many(comodel_name='garaje.coche', inverse_name='aparcamientoId', string='Coches')

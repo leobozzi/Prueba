@@ -33,6 +33,9 @@ class GarajeMantenimiento(models.Model):
         (5,4),
         required = True
     )
+    #relational fields
+
+    cocheIds = fields.Many2many(comodel_name='garaje.coche', string='Coches')
 
     
 
