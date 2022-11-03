@@ -13,7 +13,10 @@
 						<field name="name"/>
 						<field name="modelo"/>
                         <field name="construido"/>
-                        <field name="averiado"/>
+					</group>
+					<group>
+						<field name="averiado"/>
+						<field name="mantenimientoId"/>
 					</group>
 				</sheet>
 				<!-- mail mixin fields -->
