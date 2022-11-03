@@ -31,8 +31,7 @@ class GarajeMantenimiento(models.Model):
     )
 
     coste = fields.Float(
-        'Costo de mantenimiento',
-        (5,4),
+        string='Costo de mantenimiento',
         required = True
     )
 

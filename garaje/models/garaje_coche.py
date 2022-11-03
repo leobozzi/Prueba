@@ -30,8 +30,7 @@ class GarajeCoche(models.Model):
         string="Fecha del modelo",
     )
     consumo = fields.Float(
-        'Consumo', #string -> no permite la etiqueta string al ser float.
-        (4,1), #limit
+        string='Consumo', 
         default= 0.0, 
         help ='Consumo promedio de cada 100 kms'
     )
@@ -65,6 +64,9 @@ class GarajeCoche(models.Model):
                 fechaActual,
                 coche.construido
             ).years
+    
+    #model constraint fields
+    #Documentacion: https://www.odoo.com/documentation/15.0/es/developer/howtos/backend.html#model-constraints
 
-
-
+    _sql_constraints = [('name_uniq','unique(name)', 'La matricula ya existe, porfavor ingresa otra.' )]
+    
