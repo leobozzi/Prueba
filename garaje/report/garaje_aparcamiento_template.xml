@@ -13,7 +13,7 @@
                             <t t-foreach="aparcamiento.cocheIds" t-as="coche">
                                 <li>
                                     <span t-field="coche.name"/>
-                                <li>
+                                </li>
                             </t>
                         </ul>
                     </div>
