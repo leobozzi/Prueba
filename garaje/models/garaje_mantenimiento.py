@@ -46,7 +46,7 @@ class GarajeMantenimiento(models.Model):
     def name_get(self):
         resultados = []
         for mantenimiento in self:
-            descripcion = f'len{mantenimiento.cocheIds} coches - gastos: {mantenimiento.coste} $'
+            descripcion = f'{len(mantenimiento.cocheIds)} coches - gastos: {mantenimiento.coste} $'
             resultados.append((mantenimiento.id, descripcion))
                                #id element       #text
         return resultados
