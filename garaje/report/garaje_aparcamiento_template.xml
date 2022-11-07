@@ -5,7 +5,7 @@
                 <t t-call="web.external_layout"><!--Cabezara con los datos de la empresa-->
                     <div class="page">
                         <h2 t-field="aparcamiento.name"/> <!--Mostrara el titulo del aparcamiento-->
-                        <p>Numero de plazas: <span t-field="aparcamiento.plaza"/></p> <!--field es el campo del modulo-->
+                        <p>Numero de plazas: <span t-field="aparcamiento.plazas"/></p> <!--field es el campo del modulo-->
                     </div>
                     <div>
                         <h3>Vehiculos:</h3>
