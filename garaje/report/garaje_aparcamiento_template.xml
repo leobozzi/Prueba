@@ -9,15 +9,7 @@
                     </div>
                     <div>
                         <h3>Vehiculos:</h3>
-                        <ul>
-                            <t t-foreach="aparcamiento.cocheIds" t-as="coche">
-                                <li>
-                                    <span t-field="coche.name"/>
-                                </li>
-                            </t>
-                        </ul>
-                    </div>
-                    <div>
+
                         <table class="table table-sm o_main_table">
                             <thead>
                                 <tr>
@@ -28,8 +20,9 @@
                                     <th>Estado</th>                              
                                 </tr>
                             </thead>
+                            
                             <tbody>
-                                <t t-foreach="aparcamiento.cocheIds" t-as="coche"></t>
+                                <t t-foreach="aparcamiento.cocheIds" t-as="coche">
                                     <tr>
                                         <td><spam t-field="coche.name"/></td>
                                         <td><spam t-field="coche.fecha"/></td>
@@ -43,6 +36,7 @@
                                             </t>
                                         </td>
                                     </tr>
+                                </t>
                             </tbody>
                         </table>
                     </div>
