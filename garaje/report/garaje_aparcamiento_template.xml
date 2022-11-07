@@ -31,11 +31,11 @@
                             <tbody>
                                 <t t-foreach="aparcamiento.cocheIds" t-as="coche"></t>
                                     <tr>
-                                        <td><spam t-field="coche.name"></td>
-                                        <td><spam t-field="coche.fecha"></td>
-                                        <td><spam t-field="coche.modelo"></td>
-                                        <td><spam t-field="coche.construido"></td>
-                                        <td><spam t-field="coche.anual"></td>
+                                        <td><spam t-field="coche.name"/></td>
+                                        <td><spam t-field="coche.fecha"/></td>
+                                        <td><spam t-field="coche.modelo"/></td>
+                                        <td><spam t-field="coche.construido"/></td>
+                                        <td><spam t-field="coche.anual"/></td>
                                     <!--<td><spam t-field="coche.averiado"></td>Un dato boleaano no lo imprime por ese motivo hay que hacer un if y else-->
                                         <td>
                                             <t t-if="coche.averiado">
