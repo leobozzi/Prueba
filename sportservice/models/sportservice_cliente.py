@@ -1,0 +1,42 @@
+# -*- coding: utf-8 -*-
+
+from odoo import models, fields, api
+
+# class my_module(models.Model):
+#     _name = 'my_module.my_module'
+
+#     name = fields.Char()
+#     value = fields.Integer()
+#     value2 = fields.Float(compute="_value_pc", store=True)
+#     description = fields.Text()
+#
+#     @api.depends('value')
+#     def _value_pc(self):
+#         self.value2 = float(self.value) / 100
+
+
+class SportServiceCliente(models.Model):
+    _name ='sport.service.cliente'
+    _description = 'Creacion de cliente'
+
+    # models fields 
+    name = fields.Char(
+        string="Nombre",
+        required = True,
+    )
+    birthDate = fields.Date(
+        string="Fecha de nacimiento",
+        default = "10-11-2022",
+        required = True,
+     )
+
+    email = fields.Char(
+        string="Correo electrónico",
+        required = True,
+     )
+    phone = fields.Integer(
+        string="Teléfono",
+    )
+    profilePicture = fields.Image(
+        string="Imagen",
+    )
