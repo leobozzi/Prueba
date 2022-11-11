@@ -29,7 +29,7 @@
 	<record id="action_sportservice_cliente" model="ir.actions.act_window">
 		<field name="name">Cliente</field>
 		<field name="res_model">sportservice.cliente</field>
-		<field name="view_mode">tree,form</field>
+		<field name="view_mode">form</field>
 	</record>
 
 	<!-- sportservice SportServiceCliente Menu -->
