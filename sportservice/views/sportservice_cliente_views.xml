@@ -31,12 +31,26 @@
 			</form>
 		</field>
 	</record>
+
+	
+	<!--Main Sport Service Coche TREE view-->
+	<record id="sportservice_cliente_tree_view" model="ir.ui.view">
+		<field name="name">sportservice_cliente_tree_view</field>
+		<field name="model">sportservice.cliente</field>
+		<field name="arch" type="xml">
+			<tree>
+                <!--model fields-->
+				<field name="name"/>
+				<field name="birthDate"/>
+			</tree>
+		</field>
+	</record>
 	
 	<!-- Sport Services ACTIONS window -->
 	<record id="action_sportservice_cliente" model="ir.actions.act_window">
 		<field name="name">SportService</field>
 		<field name="res_model">sportservice.cliente</field>
-		<field name="view_mode">form</field>
+		<field name="view_mode">form, tree</field>
 	</record>
 
 	<!-- Sport Services Menu -->
