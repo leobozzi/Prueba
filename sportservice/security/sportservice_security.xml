@@ -30,7 +30,7 @@
 		<record id="ndm_user_rule" model="ir.rule">
 			<field name="name">SportService</field>
 			<field name="model_id" ref="module_sportservice"/>
-			<field name="groups" eval="[(4,ref('sportservice_group_manager))]"/>
+			<field name="groups" eval="[(4,ref('sportservice_group_manager'))]"/>
 		</record>
 	</data>
 
