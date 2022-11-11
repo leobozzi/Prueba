@@ -23,15 +23,15 @@
 			</form>
 		</field>
 	</record>
-
-
-    	<!-- sportservice ACTIONS window -->
+	
+	<!-- Sport Services ACTIONS window -->
 	<record id="action_sportservice_cliente" model="ir.actions.act_window">
-		<field name="name">Cliente</field>
+		<field name="name">SportService</field>
 		<field name="res_model">sportservice.cliente</field>
 		<field name="view_mode">form</field>
 	</record>
 
-	<!-- sportservice SportServiceCliente Menu -->
-	<menuitem id="sportservice_cliente_menu" name="Cliente" parent="main_sporservice_menu" action="action_sportservice_cliente" sequence="220" />
+	<!-- Sport Services Menu -->
+	<menuitem id="sportservice_cliente_menu" name="SportService" parent="main_sporservice_menu" action="action_sportservice_cliente" sequence="220" />
+
 </odoo>
