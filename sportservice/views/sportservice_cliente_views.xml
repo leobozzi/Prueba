@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <!--Main sportservice SportServiceCliente TREE view-->
-    <record model="ir.ui.view" id="sportservice_cliente_tree_view">
-      <field name="name"sportservice_cliente_tree_view></field>
-      <field name="model">sportservice.cliente</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="birthDate"/>
-        </tree>
-      </field>
-    </record>
-
  <!--Main sportservice SportServiceCliente form view-->
 
     <record model="ir.ui.view" id="sportservice_cliente_form_view">
@@ -41,6 +29,20 @@
       </field>
     </record>
 
+      <!--Main sportservice SportServiceCliente TREE view-->
+    <record model="ir.ui.view" id="sportservice_cliente_tree_view">
+      <field name="name"sportservice_cliente_tree_view></field>
+      <field name="model">sportservice.cliente</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="birthDate"/>
+        </tree>
+      </field>
+    </record>
+
+
+
     	<!-- sportservice ACTIONS window -->
 	<record id="action_sportservice_cliente" model="ir.actions.act_window">
 		<field name="name">Cliente</field>
@@ -49,5 +51,5 @@
 	</record>
 
 	<!-- sportservice SportServiceCliente Menu -->
-	<menuitem id="sportservice_cliente_menu" name="Cliente" parent="main_garaje_menu" action="action_sportservice_cliente" sequence="220" />
+	<menuitem id="sportservice_cliente_menu" name="Cliente" parent="main_sporservice_menu" action="action_sportservice_cliente" sequence="220" />
 </odoo>
