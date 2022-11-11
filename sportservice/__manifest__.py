@@ -22,10 +22,12 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/sportservice_security.xml',
+        'security/ir.model.access.csv',
         'views/sportservice_cliente_views.xml',
         'views/sportservice_views.xml',
         'views/templates.xml',
+       
     ],
 
     'installable': True,
