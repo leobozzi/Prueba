@@ -13,7 +13,7 @@ class SportServiceCliente(models.Model):
     )
     birthDate = fields.Date(
         string="Fecha de nacimiento",
-        default = "10-11-2022",
+        default = fields.date.today(),
         required = True,
      )
 
