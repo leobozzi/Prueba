@@ -16,7 +16,7 @@ from odoo import models, fields, api
 
 
 class SportServiceCliente(models.Model):
-    _name ='sport.service.cliente'
+    _name ='sportservice.cliente'
     _description = 'Creacion de cliente'
 
     # models fields 
