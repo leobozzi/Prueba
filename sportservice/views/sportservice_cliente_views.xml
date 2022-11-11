@@ -50,7 +50,7 @@
 	<record id="action_sportservice_cliente" model="ir.actions.act_window">
 		<field name="name">SportService</field>
 		<field name="res_model">sportservice.cliente</field>
-		<field name="view_mode">form, tree</field>
+		<field name="view_mode">form,tree</field>
 	</record>
 
 	<!-- Sport Services Menu -->
