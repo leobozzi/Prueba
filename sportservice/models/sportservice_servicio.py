@@ -12,7 +12,7 @@ class SportServiceServicio(models.Model):
         required = True,
     )
 
-    serviceId = fields.integer(
+    serviceId = fields.Integer(
         string="Servicio Id",
         required = True,
     )
