@@ -56,12 +56,12 @@
 	
 	<!-- Sport Services ACTIONS window -->
 	<record id="action_sportservice_trabajador" model="ir.actions.act_window">
-		<field name="name">SportService</field>
+		<field name="name">Trabajador</field>
 		<field name="res_model">sportservice.trabajador</field>
 		<field name="view_mode">tree,form</field>
 	</record>
 
 	<!-- Sport Services Menu -->
-	<menuitem id="sportservice_trabajador_menu" name="SportService" parent="main_sporservice_menu" action="action_sportservice_trabajador" sequence="220" />
+	<menuitem id="sportservice_trabajador_menu" name="Trabajador" parent="main_sporservice_menu" action="action_sportservice_trabajador" sequence="220" />
 
 </odoo>

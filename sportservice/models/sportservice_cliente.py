@@ -20,7 +20,7 @@ class SportServiceCliente(models.Model):
     email = fields.Char(
         string="Correo electrónico",
         required = True,
-        compute = '_get_value_mail',
+        #compute = '_get_value_mail',
      )
     phone = fields.Char(
         string="Teléfono",
