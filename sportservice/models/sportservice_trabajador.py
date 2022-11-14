@@ -31,6 +31,11 @@ class SportServiceTrabajador(models.Model):
     store_fname = fields.Char(
         string="File Name",
     )
+
+    cv = fields.Binary(
+        string="Curriculum Vitae",
+    )
+
     
 
   #  @api.multi

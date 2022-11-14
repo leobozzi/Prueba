@@ -23,6 +23,7 @@
 					<group>
 						<field name="email" />
 						<field name="phone" />
+						<field name="cv" />
 					</group>
 					<group>
 						<field name="store_fname" invisible="1"/>
