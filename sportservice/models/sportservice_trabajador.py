@@ -26,7 +26,7 @@ class SportServiceTrabajador(models.Model):
         string="Teléfono",
     )
     attachment = fields.Binary(
-        string="Attachment",
+        string="Imagen de perfil",
     )    
     store_fname = fields.Char(
         string="File Name",

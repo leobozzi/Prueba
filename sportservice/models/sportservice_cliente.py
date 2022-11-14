@@ -26,7 +26,7 @@ class SportServiceCliente(models.Model):
         string="Teléfono",
     )
     profilePicture = fields.Image(
-        string="Imagen",
+        string="Imagen de perfil",
     )
 
     #@api.multi
