@@ -41,6 +41,7 @@
 		<field name="arch" type="xml">
 			<tree>
                 <!--model fields-->
+				<field name="partnerId"/>
 				<field name="name"/>
 				<field name="birthDate"/>
 				<field name="profilePicture" widget= "image" height = "50"/>
