@@ -27,7 +27,7 @@
 					</group>
 					<group>
 						<field name="store_fname" invisible="1"/>
-						<field name="attachment" filename="store_fname"/>
+						<field name="attachment" filename="store_fname"  widget= "image" height = "50"/>
 					</group>
 				</sheet>
 				<!-- mail mixin fields -->
@@ -50,7 +50,7 @@
                 <!--model fields-->
 				<field name="name"/>
 				<field name="birthDate"/>
-                <field name="email"/>
+				<field name="attachment" filename="store_fname"  widget= "image" height = "50"/>
 			</tree>
 		</field>
 	</record>
