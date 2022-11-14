@@ -27,6 +27,7 @@
         'views/sportservice_views.xml',
         'views/sportservice_cliente_views.xml',
         'views/sportservice_trabajador_views.xml',
+        'views/sportservice_servicio_views.xml',
         'views/templates.xml',
        
     ],

@@ -6,11 +6,18 @@ class SportServiceTrabajador(models.Model):
     _name ='sportservice.trabajador'
     _description = 'Creacion de trabajador'
     _inherit = ['mail.thread', 'mail.activity.mixin']
+
     # models fields 
     name = fields.Char(
         string="Nombre",
         required = True,
     )
+
+    employeeId = fields.Integer(
+        string="N° de trabajador", 
+        required = True,
+    )
+
     birthDate = fields.Date(
         string="Fecha de nacimiento",
         default = fields.date.today(),
@@ -35,8 +42,6 @@ class SportServiceTrabajador(models.Model):
     cv = fields.Binary(
         string="Curriculum Vitae",
     )
-
-    
 
   #  @api.multi
    # @api.depends('email')

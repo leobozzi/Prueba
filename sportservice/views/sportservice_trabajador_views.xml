@@ -21,6 +21,7 @@
                         </div>
                     </div>
 					<group>
+						<field name="employeeId" />
 						<field name="email" />
 						<field name="phone" />
 						<field name="cv" />
@@ -48,6 +49,7 @@
 		<field name="arch" type="xml">
 			<tree>
                 <!--model fields-->
+				<field name="idTrabajador" />
 				<field name="name"/>
 				<field name="birthDate"/>
 				<field name="attachment" filename="store_fname"  widget= "image" height = "50"/>

@@ -16,7 +16,12 @@ class SportServiceCliente(models.Model):
         default = fields.date.today(),
         required = True,
      )
-
+     
+    partnerId = fields.Integer(
+        string="N° de cliente", 
+        required = True,
+    )
+    
     email = fields.Char(
         string="Correo electrónico",
         required = True,
