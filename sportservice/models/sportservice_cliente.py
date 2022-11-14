@@ -29,8 +29,8 @@ class SportServiceCliente(models.Model):
         string="Imagen",
     )
 
-    @api.multi
-    @api.depends('email')
+    #@api.multi
+    #@api.depends('email')
 
-    def _get_value_mail(self):
-        pass
+    #def _get_value_mail(self):
+        #pass
