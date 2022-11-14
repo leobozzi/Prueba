@@ -20,10 +20,17 @@ class SportServiceCliente(models.Model):
     email = fields.Char(
         string="Correo electrónico",
         required = True,
+        compute = '_get_value_mail',
      )
-    phone = fields.Integer(
+    phone = fields.Char(
         string="Teléfono",
     )
     profilePicture = fields.Image(
         string="Imagen",
     )
+
+    @api.multi
+    @api.depends('email')
+
+    def _get_value_mail(self):
+        pass
