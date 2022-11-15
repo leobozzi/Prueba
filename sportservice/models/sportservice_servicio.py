@@ -50,23 +50,19 @@ class SportServiceServicio(models.Model):
         string="Trabajador",
     )
 
-    hours = fields.Selection(
-        string = "Horario",
-        required = True,
-        selection = [
-            ('23.00-23.30','Horas'), 
-            ('18.00-18.30','18.00-18.30 Horas'), 
-        ],
-    )
-    
-    days = fields.Selection(
-        string = "Dias",
-        required = True,
-        selection = [
-            ('Lunes','Lunes'),
-            ('Martes','Martes'),
-            ('Miércoles','Miercoles'),
-        ],
-    )
+    hours = {
+        'optionOneHour': fields.Boolean(
+            string='23.00-23.30'),
+        'optionTwoHour': fields.Boolean(
+            string='18.00-18.30'),
+    }
 
+    days = {
+        'optionOneDay': fields.Boolean(
+            string="Lunes"
+        ),
+        'optionTwoDay': fields.Boolean(
+            string="Martes"
+        ),
+    }
 
