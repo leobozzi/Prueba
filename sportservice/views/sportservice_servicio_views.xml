@@ -13,14 +13,18 @@
                     <div class="container">
                         <div class="row">
                             <div>
-                                <field name="serviceImage"  widget= "image" height = "50" />
+								<group>
+                                	<field name="serviceImage"  widget= "image" height = "50" />
+								</group>
                             </div>
                             <div>
-                                <field name="name" />
-								<field name="serviceId" />
-								<field name="servicePrice" widget="monetary" />
-								<field name="serviceInstallation" />
-								<field name="duration" />
+								<group>
+									<field name="name" />
+									<field name="serviceId" />
+									<field name="servicePrice" widget="monetary" />
+									<field name="serviceInstallation" />
+									<field name="duration" />
+								</group>
                             </div>
                         </div>
                     </div>
