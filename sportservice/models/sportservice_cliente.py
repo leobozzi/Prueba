@@ -45,8 +45,5 @@ class SportServiceCliente(models.Model):
     #def _get_value_mail(self):
         #pass
 
-    @api.constrains('phone')
-    def _check_phone(self):
-        if len(self.phone) != 9:
-            raise ValidationError('Número de teléfono inválido')
+
     
