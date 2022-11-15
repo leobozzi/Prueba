@@ -13,10 +13,14 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <field name="name" />
+								<group>
+                                	<field name="name" />
+								</group>
                             </div>
                             <div class="col">
-                                <field name="birthDate" />
+								<group>
+                                	<field name="birthDate" />
+								</group>
                             </div>
                         </div>
                     </div>
