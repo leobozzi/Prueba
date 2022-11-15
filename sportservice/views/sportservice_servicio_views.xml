@@ -12,10 +12,10 @@
 				<sheet>
                     <div class="container">
                         <div class="row">
-                            <div class="col">
+                            <div>
                                 <field name="serviceImage"  widget= "image" height = "50" />
                             </div>
-                            <div class="col">
+                            <div>
                                 <field name="name" />
 								<field name="serviceId" />
 								<field name="servicePrice" widget="monetary" />
@@ -26,6 +26,8 @@
                     </div>
 					<group>
 						<field name="description" />
+						<field name="partnerIds" />
+						<field name="employeeIds" />
 					</group>
 				</sheet>
 				<!-- mail mixin fields -->

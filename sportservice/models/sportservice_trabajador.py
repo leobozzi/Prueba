@@ -42,6 +42,12 @@ class SportServiceTrabajador(models.Model):
     cv = fields.Binary(
         string="Curriculum Vitae",
     )
+    
+    serviceIds = fields.Many2many(
+        comodel_name= 'sportservice.servicio',
+        string="Servicios vinculado al empleador",
+    )
+
 
   #  @api.multi
    # @api.depends('email')

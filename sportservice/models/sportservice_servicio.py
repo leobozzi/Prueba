@@ -41,9 +41,11 @@ class SportServiceServicio(models.Model):
         string="Duracion de servicio",
     )
 
-    #clientesIds = fields.Many2many(
-        #comodel_name='sportservice.cliente',
-        #string="Cliente",
-    #)
-
-
+    partnerIds = fields.Many2many(
+        comodel_name= 'sportservice.cliente',
+        string="Cliente",
+    )
+    employeeIds = fields.Many2many(
+        comodel_name= 'sportservice.trabajador',
+        string="Trabajador",
+    )

@@ -30,6 +30,9 @@
 						<field name="store_fname" invisible="1"/>
 						<field name="attachment" filename="store_fname"  widget= "image" height = "50"/>
 					</group>
+					<group>
+						<field name="serviceIds" />
+					</group>
 				</sheet>
 				<!-- mail mixin fields -->
 				<div class="oe_chatter">

@@ -22,6 +22,10 @@ class SportServiceCliente(models.Model):
         required = True,
     )
     
+    serviceIds = fields.Many2many(
+        comodel_name= 'sportservice.servicio',
+        string="Servicios inscripto",
+    )
     email = fields.Char(
         string="Correo electrónico",
         required = True,
