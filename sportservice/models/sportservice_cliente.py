@@ -33,6 +33,7 @@ class SportServiceCliente(models.Model):
      )
     phone = fields.Char(
         string="Teléfono",
+        compute ='_check_phone',
     )
     profilePicture = fields.Image(
         string="Imagen de perfil",
@@ -43,3 +44,9 @@ class SportServiceCliente(models.Model):
 
     #def _get_value_mail(self):
         #pass
+
+    @api.constrains('phone')
+    def _check_phone(self):
+        if len(self.phone) != 9:
+            raise ValidationError('Número de teléfono inválido')
+    
