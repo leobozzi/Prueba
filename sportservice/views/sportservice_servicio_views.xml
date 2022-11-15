@@ -34,13 +34,13 @@
                             <div class="col">
 								<h3>Horarios y dias de servicios</h3>
 								<group>
-                                	<field name="days" attrs="{'invisible': [('optionOneHour','=',True)]}"/>
-									<field name="days" attrs="{'invisible': [('optionTwoHour','=',True)]}"/>
+                                	<field name="hours" attrs="{'invisible': [('optionOneHour','=',True)]}"/>
+									<field name="hours" attrs="{'invisible': [('optionTwoHour','=',True)]}"/>
 								</group>
                             </div>
                             <div class="col">
 								<group>
-									<field name="hours" attrs="{'invisible': [('optionOneDay','=',True)]}"/>
+									<field name="days" attrs="{'invisible': [('optionOneDay','=',True)]}"/>
 									<field name="days" attrs="{'invisible': [('optionTwoDay','=',True)]}"/>
 								</group>
                             </div>
