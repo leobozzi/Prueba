@@ -12,12 +12,12 @@
 				<sheet>
                     <div class="container">
                         <div class="row">
-                            <div>
+                            <div class="col">
 								<group>
                                 	<field name="serviceImage"  widget= "image" height = "50" />
 								</group>
                             </div>
-                            <div>
+                            <div class="col">
 								<group>
 									<field name="name" />
 									<field name="serviceId" />
@@ -32,16 +32,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-								<h3>Horarios y dias de servicios</h3>
 								<group>
-                                	<field name="optionOneHour" attrs="{'invisible': [('optionTwoHour','=',True)]}"/>
-									<field name="optionTwoHour" attrs="{'invisible': [('optionOneHour','=',True)]}"/>
-								</group>
-                            </div>
-                            <div class="col">
-								<group>
-									<field name="optionOneDay"  type="checkbox" />
-									<field name="optionTwoDay" type="checkbox" />
+                                	<field name="serviceDays"/>
 								</group>
                             </div>
                         </div>

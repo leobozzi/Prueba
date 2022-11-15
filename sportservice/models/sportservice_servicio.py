@@ -28,9 +28,9 @@ class SportServiceServicio(models.Model):
         string = "Instalacion de servicio",
         required = True,
         selection = [
-            ('E1', 'Example 1'), 
-            ('E2', 'Example 2'), 
-            ('E3', 'Example 3'), 
+            ('Natacion', 'Natacion'), 
+            ('Gimnacio', 'Gimnacio'), 
+            ('Futbool', 'Futbool'), 
         ],
         default = 'E1'
     )
@@ -49,20 +49,6 @@ class SportServiceServicio(models.Model):
         comodel_name= 'sportservice.trabajador',
         string="Trabajador",
     )
-
-    hours = {
-        'optionOneHour': fields.Boolean(
-            string='23.00-23.30'),
-        'optionTwoHour': fields.Boolean(
-            string='18.00-18.30'),
-    }
-
-    days = {
-        'optionOneDay': fields.Boolean(
-            string="Lunes"
-        ),
-        'optionTwoDay': fields.Boolean(
-            string="Martes"
-        ),
-    }
-
+    serviceDays = fields.Datetime(
+        string= "Fecha y hora del servicio",
+    )
